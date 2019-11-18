@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: k8s-handson-db
-  namespace: test
+  namespace: k8s-10
 spec:
   selector:
     app: db
@@ -19,7 +19,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: db-deployment
-  namespace: test
+  namespace: k8s-10
 spec:
   selector:
     matchLabels:
